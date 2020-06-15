@@ -1,0 +1,27 @@
+
+<div class="container py-5 bg-info">
+<h2 class="h2 m-5 ">Set require Information</h2>
+ {{#if message}}
+            <div class="alert {{messageClass}}" role="alert">
+                {{message}}
+            </div>
+        {{/if}}
+<div class="row justify-content-md-center" style="margin-top: 30px">
+    <form method="POST">
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" name="email" id="email" aria-describedby="email">
+    <small id="email" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" name="password" class="form-control" id="password">
+  </div>
+    <div style="margin-top: 30px">
+        <a type="submit" class="btn btn-primary btn-lg active" href="/views/login.hbs">Submit</a>
+        <a class="btn btn-danger btn-lg active ml-4" href="/home">Home</a>
+    </div>
+</form>
+</div>
+
+</div>

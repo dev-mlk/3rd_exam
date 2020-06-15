@@ -1,0 +1,47 @@
+
+<div class="container bg-secondary">
+<div class="row justify-content-md-center" style="margin-top: 30px">
+    <div class="col-md-4">
+      <h2>Fields your register page</h2>
+
+        {{#if message}}
+            <div class="alert {{messageClass}}" role="alert">
+                {{message}}
+            </div>
+        {{/if}}
+
+        <form method="POST" action="/register">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input name="name" type="text" class="form-control" id="name">
+            </div>
+
+            <div class="form-group">
+                <label for="ageNameInput">Age</label>
+                <input name="ageName" type="text" class="form-control" id="ageNameInput">
+            </div>
+
+            <div class="form-group">
+                <label for="emailInput">Email address</label>
+                <input name="email" type="email" class="form-control" id="emailInput" placeholder="Enter email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input name="password" type="password" class="form-control" id="passwordInput" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Confirm Password</label>
+                <input name="Password" type="password" class="form-control" id="confirmPasswordInput"
+                    placeholder="Re-enter your password here">
+            </div>
+          <div style="margin-top: 30px">
+        <a type="submit" class="btn btn-primary btn-lg active ml-5" href="/views/register.hbs">Submit</a>
+        <a class="btn btn-danger btn-lg active ml-4" href="/home">Home</a>
+    </div>
+           
+        </form>
+    </div>
+</div>
+</div>
